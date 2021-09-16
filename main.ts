@@ -23,7 +23,7 @@ input.onButtonPressed(Button.B, function () {
 })
 let force = 0
 let isSwitched = false
-basic.showString("IWE WATCH POWERED ON!")
+basic.showString("POWER ON!")
 basic.showIcon(IconNames.Chessboard)
 basic.clearScreen()
 basic.forever(function () {
