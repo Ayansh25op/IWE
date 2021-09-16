@@ -1,5 +1,3 @@
-let isSwitched = false
-let force = 0
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 5; index++) {
         basic.showIcon(IconNames.Butterfly)
@@ -23,6 +21,9 @@ input.onButtonPressed(Button.B, function () {
         basic.showIcon(IconNames.No)
     }
 })
+let force = 0
+let isSwitched = false
+basic.showString("IWE WATCH POWERED ON!")
 basic.forever(function () {
     force = Math.abs(input.magneticForce(Dimension.Strength))
     isSwitched = force > 100
