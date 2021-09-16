@@ -1,8 +1,5 @@
 let isSwitched = false
 let force = 0
-input.onPinPressed(TouchPin.P0, function () {
-    basic.showString("Self Destruct In 10 Seconds")
-})
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 5; index++) {
         basic.showIcon(IconNames.Butterfly)
