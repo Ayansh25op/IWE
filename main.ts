@@ -9,10 +9,10 @@ input.onButtonPressed(Button.A, function () {
             . . . . .
             `)
     }
-    basic.showString("Calling Suit")
+    basic.showString("CALLING SUIT")
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showString("Self Destruct In 10 Seconds")
+    basic.showString("SELF DESTRUCT IN 10 SECONDS")
 })
 input.onButtonPressed(Button.B, function () {
     if (isSwitched) {
@@ -24,6 +24,8 @@ input.onButtonPressed(Button.B, function () {
 let force = 0
 let isSwitched = false
 basic.showString("IWE WATCH POWERED ON!")
+basic.showIcon(IconNames.Chessboard)
+basic.clearScreen()
 basic.forever(function () {
     force = Math.abs(input.magneticForce(Dimension.Strength))
     isSwitched = force > 100
