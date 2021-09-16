@@ -13,14 +13,6 @@ input.onButtonPressed(Button.A, function () {
             . . . . .
             . . . . .
             `)
-        basic.showIcon(IconNames.Butterfly)
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
     }
 })
 input.onButtonPressed(Button.AB, function () {
