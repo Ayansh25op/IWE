@@ -14,7 +14,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("Calling Suit")
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showString(" Triggering Self Destruct In 10 Seconds")
+    basic.showString("Self Destruct In 10 Seconds")
 })
 input.onButtonPressed(Button.B, function () {
     if (isSwitched) {
