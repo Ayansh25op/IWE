@@ -13,8 +13,8 @@ input.onButtonPressed(Button.A, function () {
             . . . . .
             . . . . .
             `)
-        basic.showString("CALLING SUIT")
     }
+    basic.showString("CALLING SUIT")
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showString("Shield Activated")
