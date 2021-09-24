@@ -1,6 +1,3 @@
-input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
-    basic.showString("SELF DESTRUCT IN 10 SECONDS")
-})
 input.onButtonPressed(Button.A, function () {
     soundExpression.spring.playUntilDone()
     for (let index = 0; index < 5; index++) {
@@ -27,7 +24,7 @@ input.onButtonPressed(Button.B, function () {
         basic.showIcon(IconNames.No)
     }
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+input.onLogoEvent(TouchButtonEvent.Touched, function () {
     soundExpression.soaring.playUntilDone()
     basic.showString("Initiating Emergency Protocol ")
 })
