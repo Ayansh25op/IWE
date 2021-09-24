@@ -28,7 +28,7 @@ input.onButtonPressed(Button.B, function () {
         basic.showIcon(IconNames.No)
     }
 })
-input.onLogoEvent(TouchButtonEvent.Released, function () {
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     soundExpression.giggle.playUntilDone()
 })
 let force = 0
