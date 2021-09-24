@@ -1,3 +1,7 @@
+input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
+    soundExpression.soaring.playUntilDone()
+    basic.showString("Initiating Emergency Protocol ")
+})
 input.onButtonPressed(Button.A, function () {
     soundExpression.spring.playUntilDone()
     for (let index = 0; index < 5; index++) {
@@ -23,10 +27,6 @@ input.onButtonPressed(Button.B, function () {
     } else {
         basic.showIcon(IconNames.No)
     }
-})
-input.onLogoEvent(TouchButtonEvent.Touched, function () {
-    soundExpression.soaring.playUntilDone()
-    basic.showString("Initiating Emergency Protocol ")
 })
 let force = 0
 let isSwitched = false
