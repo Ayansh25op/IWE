@@ -1,6 +1,8 @@
+enum RadioMessage {
+    message1 = 49434
+}
 input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
-    soundExpression.soaring.playUntilDone()
-    basic.showString("Initiating Emergency Protocol ")
+    radio.sendNumber(35)
 })
 input.onButtonPressed(Button.A, function () {
     soundExpression.spring.playUntilDone()
@@ -34,6 +36,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 let force = 0
 let isSwitched = false
+let Radio = 35
+radio.setGroup(35)
 soundExpression.giggle.playUntilDone()
 basic.showIcon(IconNames.Chessboard)
 basic.pause(1000)
