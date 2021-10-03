@@ -36,7 +36,6 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 let force = 0
 let isSwitched = false
-let Radio = 35
 radio.setGroup(35)
 soundExpression.giggle.playUntilDone()
 basic.showIcon(IconNames.Chessboard)
