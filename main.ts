@@ -3,6 +3,7 @@ enum RadioMessage {
 }
 input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
     radio.sendNumber(35)
+    basic.showString("Success!")
 })
 input.onButtonPressed(Button.A, function () {
     soundExpression.spring.playUntilDone()
