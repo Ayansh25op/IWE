@@ -43,7 +43,6 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    soundExpression.giggle.playUntilDone()
     led.stopAnimation()
 })
 let force = 0
