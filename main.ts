@@ -16,24 +16,6 @@ input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
     }
     RadioConnection = 0
 })
-input.onButtonPressed(Button.A, function () {
-    soundExpression.spring.playUntilDone()
-    for (let index = 0; index < 5; index++) {
-        basic.showIcon(IconNames.Butterfly)
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
-    }
-    basic.showString("CALLING SUIT")
-})
-input.onButtonPressed(Button.AB, function () {
-    basic.showString("Shield Activated")
-    soundExpression.twinkle.playUntilDone()
-})
 input.onButtonPressed(Button.B, function () {
     soundExpression.slide.playUntilDone()
     if (isSwitched) {
