@@ -16,6 +16,12 @@ input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
     }
     RadioConnection = 0
 })
+input.onButtonPressed(Button.A, function () {
+    music.playMelody("C5 B A G F E D C ", 120)
+    music.playMelody("C5 B A G F E D C ", 120)
+    music.playMelody("C5 B A G F E D C ", 120)
+    music.playMelody("C5 B A G F E D C ", 120)
+})
 input.onButtonPressed(Button.B, function () {
     soundExpression.slide.playUntilDone()
     if (isSwitched) {
@@ -36,6 +42,7 @@ soundExpression.giggle.playUntilDone()
 basic.showIcon(IconNames.Chessboard)
 basic.pause(1000)
 basic.clearScreen()
+music.setVolume(25)
 basic.forever(function () {
     force = Math.abs(input.magneticForce(Dimension.Strength))
     isSwitched = force > 100
