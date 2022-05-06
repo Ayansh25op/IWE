@@ -57,9 +57,7 @@ basic.showIcon(IconNames.Chessboard)
 basic.pause(1000)
 basic.clearScreen()
 basic.forever(function () {
-    degrees = input.compassHeading()
-})
-basic.forever(function () {
     force = Math.abs(input.magneticForce(Dimension.Strength))
     isSwitched = force > 100
+    degrees = input.compassHeading()
 })
