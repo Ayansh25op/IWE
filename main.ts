@@ -42,7 +42,6 @@ soundExpression.giggle.playUntilDone()
 basic.showIcon(IconNames.Chessboard)
 basic.pause(1000)
 basic.clearScreen()
-music.setVolume(25)
 basic.forever(function () {
     force = Math.abs(input.magneticForce(Dimension.Strength))
     isSwitched = force > 100
