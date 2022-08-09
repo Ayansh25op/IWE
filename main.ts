@@ -45,6 +45,7 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     led.stopAnimation()
+    music.stopAllSounds()
 })
 let force = 0
 let isSwitched = false
