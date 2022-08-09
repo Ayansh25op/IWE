@@ -45,15 +45,17 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     led.stopAnimation()
+    music.setBuiltInSpeakerEnabled(false)
     music.stopAllSounds()
-    basic.pause(100)
+    basic.pause(1000)
     music.stopAllSounds()
-    basic.pause(100)
+    basic.pause(1000)
     music.stopAllSounds()
-    basic.pause(100)
+    basic.pause(1000)
     music.stopAllSounds()
-    basic.pause(100)
+    basic.pause(1000)
     music.stopAllSounds()
+    music.setBuiltInSpeakerEnabled(true)
 })
 let force = 0
 let isSwitched = false
@@ -65,6 +67,9 @@ soundExpression.giggle.playUntilDone()
 basic.showIcon(IconNames.Chessboard)
 basic.pause(1000)
 basic.clearScreen()
+basic.forever(function () {
+	
+})
 basic.forever(function () {
     force = Math.abs(input.magneticForce(Dimension.Strength))
     isSwitched = force > 100
